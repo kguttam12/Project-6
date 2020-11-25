@@ -15,7 +15,7 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+         <a href="index.html" class="pull-left visible-md visible-lg">
             <div id="logo-img" alt="Logo image"></div>
           </a>
 
@@ -37,27 +37,26 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs ">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li id="navMenuButton">
+            <li id="navMenuButton" class="active">
               <a href="file:///C:/Users/UttamKG/Desktop/after/menu-categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li style="color: black">
+                        <li style="color: black">
               <a href="#">
-              <span class="glyphicon glyphicon glyphicon-log-in" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span><br class="hidden-xs"> Login</a>
+              <span class="glyphicon glyphicon glyphicon-user" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span><br class="hidden-xs"> Login</a>
 
                <div id="id01" class="modal">
   
                 <form class="modal-content animate" action="/action_page.php" method="post">
                    <div class="imgcontainer">
                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                   <img src="C:\Users\UttamKG\Desktop\after\images\avatar.png" alt="Avatar" class="avatar">
+                   <img src="images\avatar.png" alt="Avatar" alt="Avatar" class="avatar">
                    </div>
-
-                    <div class="container">
+                   <span>
+                    <div class="container1">
                      <label for="uname"><b>Username</b></label>
                        <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -69,8 +68,9 @@
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                            </label>
                     </div>
+                </span>
 
-                      <div class="container" style="background-color:#f1f1f1">
+                      <div class="container-xs" style="background-color:#f1f1f1">
                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                      <span class="psw">Forgot <a href="#">password?</a></span>
                        </div>
@@ -96,10 +96,34 @@
   <div id="main-content" class="container">
     <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
     <div class="text-center">
-      Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
+      
     </div>
 
     <section class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+        <a href="single-category.html">
+          <div class="category-tile">
+            <img width="200" height="200" src="images/menu/B/B.jpg" alt="Lunch">
+            <span>Lunch</span>
+          </div>
+        </a>
+      </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
         <a href="single-category.html">
           <div class="category-tile">

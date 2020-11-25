@@ -15,7 +15,7 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+         <a href="index.html" class="pull-left visible-md visible-lg">
             <div id="logo-img" alt="Logo image"></div>
           </a>
 
@@ -23,7 +23,7 @@
             <a href="index.html"><h1>Gokul Misthan Bhandar</h1></a>
             <p>
               <img src="images/veg-logo.png" alt="Veg certification">
-              <span><b>Only Veg</b></span>
+              
             </p>
           </div>
 
@@ -37,17 +37,47 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs ">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li id="navMenuButton">
+            <li id="navMenuButton" class="active">
               <a href="file:///C:/Users/UttamKG/Desktop/after/menu-categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
+                        <li style="color: black">
               <a href="#">
-                <span class="glyphicon glyphicon glyphicon-log-in"></span><br class="hidden-xs"> Log In</a>
+              <span class="glyphicon glyphicon glyphicon-user" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span><br class="hidden-xs"> Login</a>
+
+               <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                   <div class="imgcontainer">
+                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                   <img src="images\avatar.png" alt="Avatar" alt="Avatar" class="avatar">
+                   </div>
+                   <span>
+                    <div class="container1">
+                     <label for="uname"><b>Username</b></label>
+                       <input type="text" placeholder="Enter Username" name="uname" required>
+
+                          <label for="psw"><b>Password</b></label>
+                         <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                           <button class="navbar-toggle1" type="submit">Login</button>
+                            <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                           </label>
+                    </div>
+                </span>
+
+                      <div class="container-xs" style="background-color:#f1f1f1">
+                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                     <span class="psw">Forgot <a href="#">password?</a></span>
+                       </div>
+                  </form>
+            </div>
+
+
             </li>
             <li>
               <a href="#">
@@ -56,6 +86,7 @@
             <li>
               <a href="#">
                 <span class="glyphicon glyphicon glyphicon-glass"></span><br class="hidden-xs"> Dine-In</a>
+              </li>
 
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
@@ -73,9 +104,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D01</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+            <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
@@ -90,9 +122,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D02</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+           <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
@@ -109,9 +142,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D03</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+            <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
@@ -126,9 +160,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D04</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+            <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
@@ -145,9 +180,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D05</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+            <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
@@ -162,9 +198,10 @@
           <div class="col-sm-5">
             <div class="menu-item-photo">
               <div>D06</div>
+                            <button > <p class="glyphicon glyphicon-plus" ></p></button>
               <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+            <div class="menu-item-price">&#8377;50 <span> (full)</span> &#8377;30 <span>(half)</span></div>
           </div>
           <div class="menu-item-description col-sm-7">
             <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
