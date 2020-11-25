@@ -260,6 +260,12 @@ h3.menu-item-title {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
+   #logo-img {
+    background: url('../images/restaurant-logo_small.png') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 0;
+  }
   .container .jumbotron {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
@@ -458,6 +464,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
+  font-weight: bold;
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
@@ -482,6 +489,8 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 /* The Modal (background) */
@@ -542,6 +551,7 @@ span.psw {
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
+    padding: 2px;
      display: block;
      float: none;
   }
@@ -551,5 +561,26 @@ span.psw {
 }
 #colorsp {
   color: black;
+}
+div.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  div.container1 {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  div.container1 {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  div.container1 {
+    width: 750px;
+  }
 }
 

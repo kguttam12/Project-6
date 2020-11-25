@@ -15,7 +15,7 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="index.html" class="pull-left visible-md visible-sm visible-lg">
             <div id="logo-img" alt="Logo image"></div>
           </a>
 
@@ -42,22 +42,23 @@
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton">
-              <a href="menu-categories.html">
+              <a href="file:///C:/Users/UttamKG/Desktop/after/menu-categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
+
             <li style="color: black">
               <a href="#">
-              <span class="glyphicon glyphicon glyphicon-log-in" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span><br class="hidden-xs"> Login</a>
+              <span class="glyphicon glyphicon glyphicon-user" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></span><br class="hidden-xs"> Login</a>
 
                <div id="id01" class="modal">
   
                 <form class="modal-content animate" action="/action_page.php" method="post">
                    <div class="imgcontainer">
                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                   <img src="images/avatar.png" alt="Avatar" alt="Avatar" class="avatar">
+                   <img src="C:\Users\UttamKG\Desktop\after\images\avatar.png" alt="Avatar" alt="Avatar" class="avatar">
                    </div>
-
-                    <div class="container">
+                   <span>
+                    <div class="container1">
                      <label for="uname"><b>Username</b></label>
                        <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -69,8 +70,9 @@
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                            </label>
                     </div>
+                </span>
 
-                      <div class="container" style="background-color:#f1f1f1">
+                      <div class="container-xs" style="background-color:#f1f1f1">
                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                      <span class="psw">Forgot <a href="#">password?</a></span>
                        </div>
@@ -83,11 +85,6 @@
               <a href="#">
                 <span class="glyphicon glyphicon glyphicon-shopping-cart"></span><br class="hidden-xs"> Delivery</a>
             </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon glyphicon-glass"></span><br class="hidden-xs"> Dine-In</a>
-              </li>
-
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
       </div><!-- .container -->
